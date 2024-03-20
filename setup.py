@@ -2,8 +2,8 @@ import setuptools
 import sys
 from db_sync_tool import info
 
-if sys.version_info < (3, 5):
-    sys.exit('db_sync_tool requires Python 3.5+ to run')
+if sys.version_info < (3, 9):
+    sys.exit('db_sync_tool requires Python 3.9+ to run')
 
 with open('README.md', 'r') as fh:
     long_description = fh.read()
@@ -20,10 +20,8 @@ setuptools.setup(
     license='MIT',
     packages=setuptools.find_packages(),
     classifiers=[
-        'Programming Language :: Python :: 3.5',
-        'Programming Language :: Python :: 3.6',
-        'Programming Language :: Python :: 3.7',
-        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.11',
+        'Programming Language :: Python :: 3.10',
         'Programming Language :: Python :: 3.9',
         'Development Status :: 5 - Production/Stable',
         'License :: OSI Approved :: MIT License',
@@ -33,15 +31,14 @@ setuptools.setup(
         'Topic :: Database',
         'Intended Audience :: Developers'
     ],
-    python_requires='>=3.5',
+    python_requires='>=3.9',
     install_requires=[
-        "paramiko>=2.11",
-        "future-fstrings>=1.2",
+        "paramiko>=3.4.0",
         "pyyaml>=6.0",
-        "jsonschema>=4.2.1",
-        "requests>=2.26.0",
+        "jsonschema>=4.21.1",
+        "requests>=2.31.0",
         "semantic_version>=2.8.5",
-        "yaspin>=2.1"
+        "yaspin>=3.0.1"
     ],
     entry_points={
         'console_scripts': [

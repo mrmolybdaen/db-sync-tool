@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- chore: update requirements.txt with bumped up versions
+- chore: bump up python compatibility to python 3.10 up to 3.11
+
 ## [2.11.4] - 2024-03-20
 
 - fix: string contact within cleanup command
